@@ -23,8 +23,10 @@ public class LinkedList {
 	}
 	
 	//head 갈아끼우기
-	public void addFirst() {
-		
+	public void addFirst(int headData) {
+		Node toBeHead = new Node(headData);
+		toBeHead.next = this.head;
+		this.head = toBeHead;
 	}
 	
 	//마지막 삭제

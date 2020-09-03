@@ -31,6 +31,18 @@ public class LinkedList {
 	
 	//마지막 삭제
 	public void delLast() {
+		Node temp;
+		Node temp2 = new Node();
+		
+		temp = this.head;
+		while (temp.next!=null) {
+
+			
+			temp2 = temp;
+			
+			temp = temp.next;
+		}
+		temp2.next=null;
 		
 	}
 	
@@ -70,6 +82,10 @@ public class LinkedList {
 class Node{
 	int data;
 	Node next;
+
+	Node() {
+		this.next=null;
+	}
 	
 	Node(int data) {
 		this.data=data;

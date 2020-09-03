@@ -17,6 +17,13 @@ public class LinkedListTest {
 		
 		System.out.println(myLinkedList.toString());
 		
+		myLinkedList.delLast();
+		System.out.println(myLinkedList.toString());
+		myLinkedList.delLast();
+		System.out.println(myLinkedList.toString());
+		myLinkedList.delLast();
+		System.out.println(myLinkedList.toString());
+		
 	}
 
 }
